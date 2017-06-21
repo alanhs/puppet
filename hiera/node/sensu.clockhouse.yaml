@@ -1,5 +1,4 @@
-class { '::rabbitmq':
-  service_manage    => true,
-  port              => '5672',
-  delete_guest_user => true,
-}
+rabbitmq::service_manage: true
+rabbitmq::port: 5672
+rabbitmq::delete_guest_user: true
+
